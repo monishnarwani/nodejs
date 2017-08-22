@@ -1,10 +1,16 @@
-var person = {
-    firstName: 'Monish',
-    lastName: 'Narwani',
-    greet: function () {
-        console.log('Hello: ' + this.firstName + ' ' + this.lastName);
-    }
-};
+var firstname = 'Jane';
 
-person.greet();
-person['greet']();
+(function () {
+    var firstname = 'John';
+    console.log(firstname);
+}());
+
+console.log(firstname);
+
+(function () {
+    {
+        var firstname = 'Monish';
+        console.log(firstname);
+    }
+}());
+console.log(firstname);
